@@ -1,0 +1,15 @@
+BEGIN
+  SET correct_number to 45 (or any number between 1 and 100)
+  SET guess to 0
+  
+  WHILE guess is not equal to correct_number
+    PROMPT user to enter a guess
+    IF guess is greater than correct_number THEN
+      OUTPUT "Your guess is too high."
+    ELSE IF guess is less than correct_number THEN
+      OUTPUT "Your guess is too low."
+    ENDIF
+  ENDWHILE
+  
+  OUTPUT "Congratulations! You guessed the correct number."
+END
